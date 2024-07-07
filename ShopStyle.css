@@ -1,0 +1,295 @@
+body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    padding-inline: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.logo {
+    height: 100px;
+    width: 120px;
+}
+
+.nav-content {
+    height: 50px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.navbar-button {
+    height: 100%;
+    width: 110px;
+    margin-inline: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: transparent;
+    border: 0px solid black;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: rgb(74, 74, 74);
+}
+
+.signup-btn {
+    height: 100%;
+    width: 130px;
+    margin-inline: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: gray;
+    border: 0px solid black;
+    margin-left: 70px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: rgb(64, 64, 64);
+}
+
+.signup-btn:active {
+    background-color: white;
+    color: gray;
+}
+
+.this{
+    border-bottom: 2px solid red;
+}
+
+.header-container{
+    position: sticky;
+    top: 100px;
+    z-index: 99;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.graying{
+    background-color: rgb(40, 40, 40);
+}
+
+.blacking{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    height: 40px;
+    margin-left: 100px;
+    width: 4%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 40px;
+    transition: 0.8s;
+    justify-content: center;
+}
+
+header:hover{
+    width: 60%;
+}
+
+header:hover input{
+    width: 90%;
+}
+
+header input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%; /* Increase width for a larger banner */
+    max-width: 1200px; /* Limit maximum width */
+    height: 400px; /* Set height for the banner */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: none;
+    width: 100%; /* Ensure carousel items take full width */
+}
+
+.carousel img {
+    width: 100%; /* Ensure images fill the carousel item */
+    height: 100%; /* Ensure images fill the carousel item height */
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+}
+
+/* Show the first carousel item */
+.carousel:first-child {
+    display: block;
+}
+
+/* Positioning for navigation buttons */
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.shop-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+.shop-container h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.line{
+    background-color: red;
+    height: 3px;
+    width: 90%;
+    
+}
+
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card{
+    height: 350px;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    padding-inline: 15px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    transition: transform 0.5s ease; 
+}
+
+.card:hover{
+    transform: translateY(-20px); 
+}
+
+.card img{
+    height: 200px;
+    width: 225px;
+}
+
+.card h1{
+    color: black;
+    font-size: 30px;
+    align-self: flex-start;
+    margin-bottom: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card p{
+    margin-top: 5px;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: flex-start;
+    font-size: 25px;
+}
+
+.card button{
+    width: 100%;
+    background-color: green;
+    border: none;
+    color: white;
+    font-weight: 800;
+    height: 30px;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: rgba(22, 22, 22, 0.596);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+
+.name-kel {
+    position: relative;
+    color: #8f8f8f;
+    top: 20px;
+    right: 20px;
+    line-height: 25px;
+    display: flex;
+}
+
+.in-div {
+    margin-right: 30px;
+}
+
+.in-div-2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 500px;
+    line-height: 30px;
+}
+
+.in-div-2:hover{
+    cursor: pointer;
+}
+
+.name-kel img {
+    height: 90px;
+    margin-right: 100px;
+}
+
+.copyright {
+    margin-top: 60px;
+    color: #8f8f8f;
+}
+
+.line-separator {
+    position: relative;
+    top: 40px;
+    
+    width: 80%;
+    height: 1px;
+    background-color: #8f8f8f;
+}
