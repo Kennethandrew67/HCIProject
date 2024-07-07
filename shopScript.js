@@ -1,7 +1,7 @@
 const homeBtn = document.getElementById("home");
 
 homeBtn.addEventListener("click", () => {
-    window.location.href = "HomePage.html"
+    window.location.href = "index.html"
 })
 
 const signUpBtn = document.getElementById("signup")
