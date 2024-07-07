@@ -1,7 +1,7 @@
 const back = document.getElementById("backbtn")
 
 back.addEventListener("click", () =>{
-    window.location.href = "HomePage.html"
+    window.location.href = "index.html"
 })
 
 const sign = document.getElementById("signin")
